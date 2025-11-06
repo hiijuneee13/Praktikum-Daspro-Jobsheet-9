@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PemesananKafeTugas125 {
+public class PemesananKafeTugas225 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan jumlah pesanan: ");
