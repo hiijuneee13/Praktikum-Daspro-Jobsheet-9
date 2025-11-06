@@ -10,18 +10,19 @@ public class MenuCariMakananTugas325 {
         }
         System.out.print("\nMasukkan nama makanan yang dicari: ");
         String cari = sc.nextLine();
-        int pos = -1;
+        int hasil = 0 ;
         for (int i = 0; i < menu.length; i++) {
             if (menu[i].equalsIgnoreCase(cari.trim())) {
-                pos = i;
+                hasil = i;
                 break;
             }
         }
-        if (pos != -1) {
-            System.out.println(cari + " tersedia pada menu indeks ke-" + pos + " (menu ke-" + (pos+1) + ").");
+        if (hasil != 0) {
+            System.out.println(cari + " tersedia pada menu indeks ke-" + hasil + " (menu ke-" + (hasil+1) + ").");
         } else {
             System.out.println("Maaf, " + cari + " tidak ada di menu.");
         }
         sc.close();
     }
 }
+

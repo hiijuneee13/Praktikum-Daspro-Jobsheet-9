@@ -9,17 +9,17 @@ public class SearchNilai25 {
             System.out.print("Masukkan nilai ke-" + (i+1) + ": ");
             nilai[i] = sc.nextInt();
         }
-        System.out.print("Masukkan nilai yang dicari (key): ");
+        System.out.print("Masukkan nilai yang ingin dicari: ");
         int key = sc.nextInt();
-        int pos = -1;
+        int hasil = 0;
         for (int i = 0; i < nilai.length; i++) {
             if (nilai[i] == key) {
-                pos = i;
+                hasil = i;
                 break;
             }
         }
-        if (pos != -1) {
-            System.out.println("Nilai " + key + " ditemukan pada indeks ke-" + pos);
+        if (hasil !=0) {
+            System.out.println("Nilai" + key + " ditemukan pada indeks ke-" + hasil);
         } else {
             System.out.println("Nilai yang dicari tidak ditemukan");
         }
