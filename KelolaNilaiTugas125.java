@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class KelolaNilaiTugas125 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan banyaknya mahasiswa: ");
+        System.out.print("Masukkan banyaknya mahasiswa!: ");
         int n = sc.nextInt();
         int[] nilai = new int[n];
         for (int i = 0; i < n; i++) {
